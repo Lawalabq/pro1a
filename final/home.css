@@ -1,0 +1,298 @@
+body {
+    background-color: #d2dce7;
+
+    margin: 0px;
+}
+
+button :hover {
+    background-color: aliceblue;
+}
+
+#list {
+    display: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+li a {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+label {
+    display: none;
+}
+
+nav {
+    width: 150px;
+    background: none;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+#img1 {
+    background-image: url(oglogo.jpeg);
+
+    background-size: contain;
+}
+
+span {
+    padding: 10px;
+    background: none;
+    color: white;
+    font-size: 1em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    font-size: 30px;
+}
+
+span::after {
+    float: right;
+    right: 10%;
+
+    font-size: larger;
+}
+
+.slide {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+}
+
+.slide li {
+    padding: 30px;
+}
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.slide {
+    height: 300px;
+}
+
+#begn {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    background-image: url(cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#begn button {
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    align-self: flex-end;
+    background: none;
+    border: 5px white solid;
+}
+
+#img1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 7px solid white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: space-evenly;
+}
+
+.part a {
+    align-self: center;
+}
+
+.part {
+    text-align: center;
+}
+
+.part {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.part:nth-child(1) {
+    border-right: 3px solid lightblue;
+    ;
+}
+
+.part:nth-child(3) {
+    border-left: 3px solid lightblue;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(211, 249, 249);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#tools {
+    background-image: url(mission.png);
+
+}
+
+#scroll {
+    background-image: url(about\ us.jpg);
+    background-position: -17px;
+}
+
+#watch {
+    background-image: url(cartoon.png);
+
+}
+
+@media screen and (max-width:600px) {
+    #begn {
+        flex-direction: column;
+    }
+
+    button {
+        display: none;
+    }
+
+
+    label {
+        display: contents;
+        margin-left: 300px;
+    }
+
+    nav {
+        margin-left: 200px;
+    }
+
+    nav li {
+        list-style: none;
+        text-align: left;
+        background-color: #d2dce7;
+        opacity: 70%;
+    }
+
+    nav li :hover {
+        opacity: 100%;
+    }
+
+
+    #list {
+        display: block;
+        display: contents;
+        color: aliceblue;
+
+
+
+        font-size: 40px;
+
+
+
+
+
+    }
+
+    #spec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    main {
+        flex-direction: column;
+        height: 1000px;
+        align-items: center;
+
+    }
+
+    .part {
+        text-align: center;
+    }
+
+    .part:nth-child(1) {
+        border-right: none;
+    }
+
+    .part:nth-child(3) {
+        border-left: none;
+    }
+
+    .part:nth-child(2) {
+        border-top: silver 3px solid;
+        border-bottom: silver 3px solid;
+    }
+
+    .active {
+        display: contents;
+        transition: 1s;
+    }
+
+    .dropdown {
+        min-width: 15em;
+        position: relative;
+        margin: 2em;
+    }
+
+    .dropdown * {
+        box-sizing: border-box;
+    }
+
+    .select {
+
+        color: brown;
+        display: flex;
+
+    }
+
+
+
+    .menu {
+        list-style: none;
+        padding: 0.2em o.5em;
+        background: gray;
+        border: 1px solid black;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+    }
+}
